@@ -24,6 +24,7 @@ botonFinalizar.innerText = "Finalizar compra";
 sectionCarrito.appendChild(botonFinalizar);
 botonFinalizar.setAttribute("class", "boton");
 
+//Le agrego un evento al boton para que muestre el precio final y despues se vacie el carrito
 botonFinalizar.onclick = () => {
     const precioFinal = montoTotalCompra.innerText;
     alert("El total de su compra es: $" + precioFinal);
